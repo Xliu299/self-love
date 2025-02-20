@@ -1,6 +1,6 @@
 // 获取元素
-let nameInput = document.getElementById('usernameInput');
-let confirmNameButton = document.getElementById('confirmNameButton');
+// let nameInput = document.getElementById('usernameInput');
+//let confirmNameButton = document.getElementById('confirmNameButton');
 let questionText = document.getElementById('question');
 let yesButton = document.getElementById('yes');
 let noButton = document.getElementById('no');
@@ -12,27 +12,27 @@ let xiaohongshuLink = document.getElementById('xiaohongshuLink');
 let douyinLink = document.getElementById('douyinLink');
 let repoLink = document.getElementById('repoLink');
 
-// 显示名字输入框
-nameInputContainer.style.display = 'block';
+// // 显示名字输入框
+// nameInputContainer.style.display = 'block';
 
-// 确认名字按钮点击事件
-confirmNameButton.addEventListener('click', function () {
-    let username = nameInput.value;
-    // 限制用户名长度，避免页面样式崩坏
-    const maxLength = 20;
-    const safeUsername = username? username.substring(0, maxLength) : "";
-    // 隐藏名字输入框，显示表白内容
-    nameInputContainer.style.display = 'none';
-    // 隐藏新增的链接元素
-    xiaohongshuLink.style.display = 'none';
-    douyinLink.style.display = 'none';
-    repoLink.style.display = 'none';
-    confessionContainer.style.display = 'block';
-    // 给按钮容器添加动画类名
-    buttonsContainer.classList.add('slide-up-fade-in');
-    // 将用户名添加到问题文本
-    questionText.innerText = `可以成为我的恋人吗？${safeUsername}`;
-});
+// // 确认名字按钮点击事件
+// confirmNameButton.addEventListener('click', function () {
+//     let username = nameInput.value;
+//     // 限制用户名长度，避免页面样式崩坏
+//     const maxLength = 20;
+//     const safeUsername = username? username.substring(0, maxLength) : "";
+//     // 隐藏名字输入框，显示表白内容
+//     nameInputContainer.style.display = 'none';
+//     // 隐藏新增的链接元素
+//     xiaohongshuLink.style.display = 'none';
+//     douyinLink.style.display = 'none';
+//     repoLink.style.display = 'none';
+//     confessionContainer.style.display = 'block';
+//     // 给按钮容器添加动画类名
+//     buttonsContainer.classList.add('slide-up-fade-in');
+//     // 将用户名添加到问题文本
+//     questionText.innerText = `可以成为我的恋人吗？${safeUsername}`;
+// });
 
 let clickCount = 0; // 记录点击 No 的次数
 // No 按钮的文字变化
